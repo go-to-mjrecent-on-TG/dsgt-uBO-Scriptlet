@@ -18,8 +18,8 @@ function A(height) {
             navigator.clipboard.writeText(A.values().find(A => A?.exports?.default?.getToken).exports.default.getToken())
         }
 
-        window.onload = async function() {
-            const observer = new MutationObserver(() => {
+        window.onload = function() {
+            const observer = new MutationObserver(async function() {
                 let e = document.querySelector('[data-list-id="guildsnav"]')
                 while (!e) {
                     await new Promise(r => setTimeout(r, 1000))
