@@ -1,5 +1,5 @@
 /// dsgt.js
-function (height) {
+function A(height) {
     const urlPath = document.URL.slice(20)
 
     if (urlPath.startsWith('channels') || urlPath == 'app') {
