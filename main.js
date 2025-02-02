@@ -19,7 +19,7 @@ function A(height) {
         }
 
         window.onload = async function() {
-            const observer = new MutationObserver({
+            const observer = new MutationObserver(() => {
                 let e = document.querySelector('[data-list-id="guildsnav"]')
                 while (!e) {
                     await new Promise(r => setTimeout(r, 1000))
